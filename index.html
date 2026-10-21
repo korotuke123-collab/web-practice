@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喫茶こもれび</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Yu Gothic", sans-serif;
+      color: #333;
+      background: #faf8f5;
+    }
+
+    header {
+      background: #4b382b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: #e8d8c5;
+      padding: 85px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #654832;
+      color: white;
+      padding: 14px 30px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .item {
+      background: white;
+      padding: 25px;
+      width: 180px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px #00000012;
+    }
+
+    footer {
+      background: #4b382b;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    /* スマートフォン向けの表示調整。PC用の既存スタイルは変更しない。 */
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+        line-height: 1.4;
+      }
+
+      .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .item {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>喫茶こもれび</h2>
+    <nav>
+      <a href="#about">お店について</a>
+      <a href="#menu">メニュー</a>
+      <a href="#access">アクセス</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>コーヒーと、くつろぐ時間。</h1>
+    <p>深煎りコーヒーが自慢の小さな喫茶店</p>
+    <a href="#menu" class="button">メニューを見る</a>
+  </div>
+
+  <section id="about">
+    <h2>お店について</h2>
+    <p>
+      喫茶こもれびは、ゆっくりとした時間を
+      楽しんでいただくためのカフェです。
+    </p>
+  </section>
+
+  <section id="menu">
+    <h2>メニュー</h2>
+    <div class="menu">
+      <div class="item">
+        <h3>ブレンドコーヒー</h3>
+        <p>500円</p>
+      </div>
+      <div class="item">
+        <h3>カフェオレ</h3>
+        <p>550円</p>
+      </div>
+      <div class="item">
+        <h3>チーズケーキ</h3>
+        <p>600円</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="access">
+    <h2>アクセス</h2>
+    <p>福島県福島市（架空の店舗です）</p>
+    <p>営業時間 10:00〜18:00</p>
+  </section>
+
+  <footer>
+    <p>© 喫茶こもれび</p>
+  </footer>
+
+</body>
+</html>
